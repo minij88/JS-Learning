@@ -135,7 +135,6 @@ for(let s2=n;s2>=1;s2--)
       {
         pattern+="*";
       }
-    
     console.log(pattern);
 }
 for(let x=n-1;x>=1;x--)

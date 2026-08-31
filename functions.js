@@ -84,4 +84,21 @@ function add(i,j)
 let result=add(10,20);
 console.log("The sum is "+result);
 
+// Currying function means function returning another function
+
+function func1()
+{
+ function func2()
+ {
+    return "From function 2";
+ }
+ return func2();
+}
+
+function func3()
+{
+    console.log(func1());
+}
+func3();
+
 
