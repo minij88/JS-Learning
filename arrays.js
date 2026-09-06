@@ -18,7 +18,7 @@ console.log(fruits);      // shows [ 'Apple', 'Grapes', 'Kiwi' ]
 // The push() method in JavaScript adds one or more elements to the end of an array and returns the new length of the array.
 
 const prompt = require('prompt-sync')(); 
-let userInput=prompt("Enter your number of items you want in array");
+let userInput=prompt("Enter the number of items you want in array");
 let arrNumber=[];
 for(let i=1;i<=userInput;i++)
 {
@@ -137,6 +137,8 @@ console.log(arrayNested);
 // The splice() method in JavaScript is used to change the contents of an array by removing, replacing, or adding elements.
 // When deleteCount is 0, so no elements are removed.
 // If deleteCount isomitted, all elements from startIndex to the end are removed
+// If startIndex is negative, it counts from the end.
+// If no items are provided, splice() only removes elements.
 
 // using splice() to remove Elements from an Array
 let cities=["Agra","Delhi","Mumbai","Gangtok","Shillong","Rajkot"];
@@ -164,6 +166,8 @@ citiesNew4.splice(citiesNew4.length-1,0,"Rishikesh");
 console.log(citiesNew4);  // shows [ 'Agra', 'Delhi','Mumbai', 'Gangtok','Shillong', 'Rishikesh', 'Rajkot']
 
 // Negative indices in splice()
+// Negative indices count from the end, where -1 refers to the last element, -2 to the second last, and so on.
+
 let citiesNew5=["Agra","Delhi","Mumbai","Gangtok","Shillong","Rajkot"];
 citiesNew5.splice(-3,1,"Pune");
 console.log(citiesNew5);  // shows [ 'Agra', 'Delhi', 'Mumbai', 'Pune', 'Shillong', 'Rajkot' ]
@@ -176,6 +180,14 @@ let citiesNes7=["Agra","Delhi","Mumbai","Gangtok","Shillong","Rajkot"];
 citiesNes7.splice("Pune");
 console.log(citiesNes7);  // shows []
 
+let citiesNew8=["Agra","Delhi","Mumbai","Gangtok","Shillong","Rajkot"];
+citiesNew8.splice();
+console.log(citiesNew8);  // shows [ 'Agra', 'Delhi', 'Mumbai', 'Gangtok', 'Shillong', 'Rajkot' ]
+
+// when retrieving an non existing value from an array
+
+let array1=[10,20,30,40,50];
+console.log(array1[10]);  // shows undefined
 
 // Program to find largest number in an array
 
