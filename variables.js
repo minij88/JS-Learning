@@ -10,14 +10,14 @@ console.log(b);   //shows 40
 // let variable--> cannot be redeclare but can be reaasign
 
 let c=50;
-//let c=60; //shows error c has laready been declared
+//let c=60; //shows error c has already been declared
 console.log(c); 
 
 let name="mini";
 name="jain";
 console.log(name); 
 
-//const variable-->
+//const variable-->  cannot be redeclare and reaasign
 
 const student_name="Aman";
 //student_name="Agarwal" // shows error as Assignment to const variables

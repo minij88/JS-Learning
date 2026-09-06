@@ -1,7 +1,6 @@
 
-i=10;
-console.log(i);
-let for=1;
+let value2="20";
+console.log(parseFloat(value2));
 
 
 let newText=" Helloh Plhaywright ";

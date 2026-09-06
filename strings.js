@@ -33,7 +33,8 @@ console.log(newText.trim()); // shows Hello Playwright           // it removes w
 console.log(newText.trim(1));   // shows Hello Playwright        // trim ignores parameter
 console.log(newText.trimStart());                                // method removes whitespace from the beginning (start) of a string.
 console.log(newText.trimEnd());                                  // method removes whitespace from the end of a string.
-console.log(newText.replace("Hello","Hi")); // Hi Playwright    // it replaces the text with the new one.
+console.log(newText.replace("Hello","Hi")); // shows Hi Playwright    // it replaces the text with the new one.
+console.log(newText.replace("H","h"));    // shows hello Playwright 
 
 // charCodeAt() returns the UTF-16 code unit at a specified index in a string.
 
