@@ -31,6 +31,19 @@ let str8= new String("India");
 console.log(str5===str6);
 console.log(str5===str7);
 console.log(str6===str8);
+console.log(str6==str8);
+console.log(str5==str6);
+
+function hi() {
+    console.log("Hello");
+}
+
+function hi() {
+    console.log("Hi");
+}
+
+hi();
+
 
 
 

@@ -76,7 +76,7 @@ let person={
 }
 person.information();     // shows My name is Shikha and age is 20
 
-// Methos with Parameters
+// Methods with Parameters
 
 let calculator={
     add(a,b)
@@ -104,3 +104,5 @@ console.log(calculator.add(-3));         // shows NaN
 console.log(calculator.subtract());     // shows undefined
 console.log(calculator.divide());       // shows undefined
 console.log(calculator.divide(20,10));   // shows undefined
+
+// Nested objects

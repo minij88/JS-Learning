@@ -15,7 +15,7 @@ for (; ; a++) {
     break;
 } */
 
-    let n=5;
+    let n=4;
  let num=1;
 for(let s=1;s<=n;s++)
 {
@@ -27,8 +27,8 @@ for(let s=1;s<=n;s++)
     }
     console.log(pattern6);
 }
-let num1=1;
-for(let x=1;x<=n;x++)
+let num1=1,num2=9;
+for(let x=1;x<n;x++)
 {
     let pattern="";
     for(let y=1;y<=n-x;y++)
@@ -40,8 +40,7 @@ for(let x=1;x<=n;x++)
         pattern+=num1+" ";
            num1++;
       }
-   
-    console.log(pattern);
+   console.log(pattern);
 }
 for(let x=n-1;x>=1;x--)
 {
@@ -52,7 +51,8 @@ for(let x=n-1;x>=1;x--)
   }
   for(let z=1;z<=2*x-1;z++)
   {
-    pattern+="*";
+    pattern+=num2+" ";
+    num2--;
   }
   console.log(pattern);
 }
