@@ -1,6 +1,31 @@
+try
+{
+console.log("First try block");
+let answer=10/0;
+console.log(answer);
+}
+/*catch
+{
+console.error("First catch block");
+}*/
+finally{
+console.log("First finally block");
+}
 
 let value2="20";
 console.log(parseFloat(value2));
+
+function addNoArgNoReturn()
+{
+     let firstNumber=50;
+    let secondNumber=90;
+    function callback()
+    {
+       return(firstNumber+secondNumber);
+    }
+    callback();
+}
+addNoArgNoReturn();
 
 
 let newText=" Helloh Plhaywright ";
@@ -43,6 +68,23 @@ function hi() {
 }
 
 hi();
+
+function outer() {
+    let count = 0;
+
+    function inner() {
+        count++;
+        console.log(count);
+    }
+
+    return inner;
+}
+
+let counter = outer();
+
+counter(); // 1
+counter(); // 2
+counter();
 
 
 

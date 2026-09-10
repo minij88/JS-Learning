@@ -59,17 +59,52 @@ if(true)
 // Scope Chain:JavaScript looks for a variable from the current scope → outer scope → global scope.
 
 let number1=30;
-function outer()
+function outerFunction()
 {
     let number2=40;
-    function inner()
+    function innerFunction()
     {
        console.log(number1); 
        console.log(number2); 
     }
-    inner();
+    innerFunction();
 }
-outer();              //shows 30 40
+outerFunction();              //shows 30 40
 
 // A closure is created when an inner function remembers and can access variables from its outer function's scope, even after the outer function has finished executing.
+// Closures are commonly used for data privacy/encapsulation.
 
+function outer()
+{
+    let count=0;
+    function inner()
+    {
+        count++;
+        console.log(count);
+    }
+    return inner;
+}
+let counter=outer();
+counter();             // shows 1
+counter();             // shows 2
+counter();             // shows 3
+// counter is a closure that remembers count and counter() does not create a new count each time.
+
+
+function createBankAccount() {
+  let balance = 1000;
+
+  return {
+    getBalance() {
+      return balance;
+    },
+
+    deposit(amount) {
+      balance += amount;
+    }
+  };
+}
+const account = createBankAccount();
+account.deposit(500);
+console.log(account.getBalance());            //  shows 1500
+console.log(account.balance);                //  shows undefined  
