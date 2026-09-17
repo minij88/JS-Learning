@@ -27,4 +27,4 @@ function sumOfLength(previous,next)
     return previous+next.length;
 }
 const lengthSum=empName.reduce(sumOfLength,0);
-console.log(lengthSum);   
+console.log(lengthSum);                          // shows 19
