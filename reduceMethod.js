@@ -28,3 +28,6 @@ function sumOfLength(previous,next)
 }
 const lengthSum=empName.reduce(sumOfLength,0);
 console.log(lengthSum);                          // shows 19
+
+
+// date calculate by generator
